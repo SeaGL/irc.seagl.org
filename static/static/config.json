@@ -1,11 +1,14 @@
 {
     "aliases": "",
+    "emojis": {},
     "kiwiServer": "https://web.libera.chat/webirc/kiwiirc/",
+    "showEmojiPicker": false,
     "startupScreen": "welcome",
     "windowTitle": "Chat · SeaGL",
 
     "buffers": {
         "inline_link_auto_previews": false,
+        "show_emoticons": false,
         "show_link_previews": false
     },
 
