@@ -3,6 +3,11 @@
     "startupScreen": "welcome",
     "windowTitle": "Chat · SeaGL",
 
+    "buffers": {
+        "inline_link_auto_previews": false,
+        "show_link_previews": false
+    },
+
     "startupOptions": {
         "channel": "#SeaGL",
         "nick": "Guest?"
