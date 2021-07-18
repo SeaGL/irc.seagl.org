@@ -8,6 +8,7 @@
 
     "buffers": {
         "inline_link_auto_previews": false,
+        "messageLayout": "compact",
         "share_typing": false,
         "show_emoticons": false,
         "show_link_previews": false
