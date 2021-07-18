@@ -1,6 +1,7 @@
 {
     "aliases": "",
     "emojis": {},
+    "hide_advanced": true,
     "kiwiServer": "https://web.libera.chat/webirc/kiwiirc/",
     "showEmojiPicker": false,
     "startupScreen": "welcome",
