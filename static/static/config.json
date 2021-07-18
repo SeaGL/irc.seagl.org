@@ -1,0 +1,10 @@
+{
+    "kiwiServer": "https://web.libera.chat/webirc/kiwiirc/",
+    "startupScreen": "welcome",
+    "windowTitle": "Chat · SeaGL",
+
+    "startupOptions": {
+        "channel": "#SeaGL",
+        "nick": "Guest?"
+    }
+}
