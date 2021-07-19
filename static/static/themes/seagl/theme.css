@@ -193,6 +193,9 @@
 .kiwi-statebrowser-usermenu:not(.kiwi-statebrowser-usermenu--open) .kiwi-statebrowser-usermenu-network {
     display: none;
 }
+.kiwi-statebrowser-channel[data-name="#seagl"] .kiwi-statebrowser-channel-leave {
+    display: none;
+}
 
 /* Status indicators */
 .kiwi-awaystatusindicator,
