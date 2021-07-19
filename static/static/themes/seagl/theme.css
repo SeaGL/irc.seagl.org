@@ -1,0 +1,249 @@
+@import '../common/base.css';
+@import '../osprey/theme.css';
+
+:root {
+    /* Palette */
+    --seagl-blue-50: #f5fcff;
+    --seagl-blue-100: #e1ebf0;
+    --seagl-blue-200: #c3d2d9;
+    --seagl-blue-300: #91b0bf;
+    --seagl-blue-400: #6396ad;
+    --seagl-blue-500: #3e819c;
+    --seagl-blue-600: #276f8a;
+    --seagl-blue-700: #0c5973;
+    --seagl-blue-800: #00465e;
+    --seagl-blue-900: #003146;
+    --seagl-red-50: #faeced;
+    --seagl-red-100: #f4d0d0;
+    --seagl-red-200: #dda19a;
+    --seagl-red-300: #cd7f75;
+    --seagl-red-400: #d36853;
+    --seagl-red-500: #d45f3e;
+    --seagl-red-600: #c6573c;
+    --seagl-red-700: #b54e36;
+    --seagl-red-800: #a74831;
+    --seagl-red-900: #96412a;
+    --seagl-yellow-50: #fffcf7;
+    --seagl-yellow-100: #ffeecc;
+    --seagl-yellow-200: #fedfa1;
+    --seagl-yellow-300: #fed88c;
+    --seagl-yellow-400: #fdd076;
+    --seagl-yellow-500: #fdc960;
+    --seagl-yellow-600: #fcc14a;
+    --seagl-yellow-700: #fcb320;
+    --seagl-yellow-800: #d79425;
+    --seagl-yellow-900: #b1742a;
+    --green: #379a7c;
+    --green-light: #5db69c;
+    --orange: #de6316;
+    --pink: #cc1d51;
+    --purple: #914969;
+    --brown: #805d40;
+    --cyan: #41a8b4;
+    --cyan-light: #51b7c2;
+    --gray: #666;
+    --gray-light: #ddd;
+
+    /* Assignments */
+    --brand-primary: var(--seagl-blue-700);
+    --brand-primary-hover: var(--seagl-blue-600);
+    --brand-midtone: var(--seagl-yellow-50);
+    --brand-darktone: #dfdcd9;
+    --brand-default-bg: var(--seagl-yellow-50);
+    --brand-default-fg: #000;
+    --brand-notice: var(--seagl-yellow-700);
+    --brand-warning: var(--seagl-red-900);
+    --brand-error: var(--seagl-red-900);
+    --comp-statebrowser-bg: var(--seagl-blue-800);
+    --comp-statebrowser-fg-muted: var(--seagl-blue-300);
+}
+
+/* Welcome Screens */
+.kiwi-startup-common-section-info {
+    border-left: none;
+    order: 1;
+}
+.kiwi-startup-common--no-bg .kiwi-startup-common-section-info {
+    background-color: var(--brand-default-bg);
+}
+.kiwi-startup-common-section-info-content {
+    background-color: transparent;
+    border-radius: 0;
+}
+.kiwi-startup-common-section-connection {
+    background-color: var(--comp-statebrowser-bg);
+    color: var(--comp-statebrowser-fg);
+    order: 2;
+}
+.kiwi-startup-common-section-connection a {
+    color: inherit;
+}
+.kiwi-startup-common-section-connection .muted {
+    color: var(--comp-statebrowser-fg-muted);
+}
+.kiwi-startup-common-section-connection .u-button-primary {
+    border-bottom-color: var(--seagl-blue-900);
+}
+.kiwi-startup-common-section-connection .u-form label {
+    color: inherit;
+}
+.kiwi-startup-common-section-connection .u-input-text {
+    background-color: transparent;
+}
+.kiwi-startup-common-section-connection .u-input-text input {
+    border-color: var(--seagl-blue-700);
+}
+.kiwi-startup-common-section-connection .u-input-text input:focus {
+    border-color: var(--comp-statebrowser-fg);
+}
+.kiwi-startup-common-section-connection .u-input-text input::placeholder {
+    color: var(--comp-statebrowser-fg-muted);
+    opacity: 1;
+}
+@media (max-width: 850px) {
+    .hide-small {
+        display: none;
+    }
+
+    .kiwi-startup-common {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .kiwi-startup-common-section {
+        overflow: unset;
+    }
+
+    .kiwi-startup-common--no-bg .kiwi-startup-common-section-info {
+        border-top-color: var(--seagl-blue-700);
+    }
+
+    form.kiwi-welcome-simple-form {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+@media (min-width: 851px) {
+    .show-small {
+        display: none;
+    }
+}
+
+/* Header */
+.kiwi-header-option a,
+.kiwi-header-option i {
+    line-height: 43px;
+}
+.plugin-conference-button a {
+    opacity: 1;
+}
+.plugin-conference-button a {
+    background-color: var(--seagl-yellow-600);
+    color: var(--brand-default-fg);
+}
+.plugin-conference-button a:hover {
+    background-color: var(--seagl-yellow-700);
+    color: var(--brand-default-fg);
+}
+
+/* StateBrowser */
+.kiwi-statebrowser-network .kiwi-statebrowser-network-header {
+    background-color: transparent;
+}
+.kiwi-wrap[data-activebuffer="*"] .kiwi-statebrowser-network .kiwi-statebrowser-network-header {
+    background-color: var(--comp-statebrowser-channel-active-bg);
+}
+.kiwi-statebrowser-network.kiwi-statebrowser-network--active .kiwi-statebrowser-network-header {
+    border-left: none;
+}
+.kiwi-statebrowser-channel-active {
+    border-left: none;
+}
+.kiwi-statebrowser-channel-label {
+    background-color: var(--seagl-yellow-700);
+    color: var(--brand-default-fg);
+}
+.kiwi-statebrowser-channel-notjoined .kiwi-statebrowser-channel-name {
+    color: var(--seagl-blue-500);
+}
+.kiwi-statebrowser-usermenu-avatar .kiwi-avatar-inner,
+.kiwi-statebrowser-usermenu-avatar:hover .kiwi-avatar-inner,
+.kiwi-statebrowser-usermenu--open .kiwi-avatar-inner {
+    background-color: transparent !important;
+    color: transparent !important;
+}
+.kiwi-statebrowser-usermenu-avatar {
+    height: 104px;
+    width: 136px;
+}
+.kiwi-statebrowser-usermenu-avatar .kiwi-avatar-inner {
+    background-image: url("mascot-spotlight.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    border-radius: 0;
+    user-select: none;
+}
+.kiwi-statebrowser-usermenu .kiwi-awaystatusindicator {
+    left: 14px;
+    right: unset;
+    top: 14px;
+}
+.kiwi-statebrowser-usermenu:not(.kiwi-statebrowser-usermenu--open) .kiwi-statebrowser-usermenu-network {
+    display: none;
+}
+
+/* Status indicators */
+.kiwi-awaystatusindicator,
+.kiwi-statebrowser-usermenu .kiwi-awaystatusindicator {
+    background-color: var(--green-light);
+}
+.kiwi-awaystatusindicator.kiwi-awaystatusindicator--away {
+    background-color: var(--seagl-yellow-700);
+}
+
+/* Message list */
+.kiwi-messagelist-message--hover {
+    border-left-color: #aaa;
+}
+.kiwi-messagelist-message.kiwi-messagelist-message--unread {
+    border-left-color: var(--seagl-yellow-700);
+}
+.kiwi-messagelist-message-notice {
+    background: var(--seagl-yellow-100);
+}
+
+/* IRC palette */
+.irc-fg-colour-white { color: var(--brand-default-bg); }
+.irc-fg-colour-black { color: var(--brand-default-fg); }
+.irc-fg-colour-blue { color: var(--seagl-blue-700); }
+.irc-fg-colour-green { color: var(--green); }
+.irc-fg-colour-light-red { color: var(--seagl-red-600); }
+.irc-fg-colour-brown { color: var(--brown); }
+.irc-fg-colour-purple { color: var(--purple); }
+.irc-fg-colour-orange { color: var(--orange); }
+.irc-fg-colour-yellow { color: var(--seagl-yellow-700); }
+.irc-fg-colour-light-green { color: var(--green-light); }
+.irc-fg-colour-cyan { color: var(--cyan); }
+.irc-fg-colour-light-cyan { color: var(--cyan-light); }
+.irc-fg-colour-light-blue { color: var(--seagl-blue-400); }
+.irc-fg-colour-pink { color: var(--pink); }
+.irc-fg-colour-grey { color: var(--gray); }
+.irc-fg-colour-light-grey { color: var(--gray-light); }
+.irc-bg-colour-white { background-color: var(--brand-default-bg); }
+.irc-bg-colour-black { background-color: var(--brand-default-fg); }
+.irc-bg-colour-blue { background-color: var(--seagl-blue-700); }
+.irc-bg-colour-green { background-color: var(--green); }
+.irc-bg-colour-light-red { background-color: var(--seagl-red-600); }
+.irc-bg-colour-brown { background-color: var(--brown); }
+.irc-bg-colour-purple { background-color: var(--purple); }
+.irc-bg-colour-orange { background-color: var(--orange); }
+.irc-bg-colour-yellow { background-color: var(--seagl-yellow-700); }
+.irc-bg-colour-light-green { background-color: var(--green-light); }
+.irc-bg-colour-cyan { background-color: var(--cyan); }
+.irc-bg-colour-light-cyan { background-color: var(--cyan-light); }
+.irc-bg-colour-light-blue { background-color: var(--seagl-blue-400); }
+.irc-bg-colour-pink { background-color: var(--pink); }
+.irc-bg-colour-grey { background-color: var(--gray); }
+.irc-bg-colour-light-grey { background-color: var(--gray-light); }
