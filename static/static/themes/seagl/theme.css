@@ -196,6 +196,29 @@
 .kiwi-statebrowser-channel[data-name="#seagl"] .kiwi-statebrowser-channel-leave {
     display: none;
 }
+.seagl-statebrowser-content a {
+    color: inherit;
+    text-decoration: none;
+}
+.seagl-statebrowser-content a:is(:active, :focus, :hover) {
+    text-decoration: underline;
+}
+.seagl-statebrowser-content h1 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    opacity: 1;
+    padding: 0;
+}
+.seagl-statebrowser-content :is(p, ul) {
+    margin-bottom: 0.5em;
+}
+ul.plain {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+}
 
 /* Status indicators */
 .kiwi-awaystatusindicator,
