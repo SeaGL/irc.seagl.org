@@ -7,7 +7,7 @@
     "startupScreen": "welcome",
     "theme": "SeaGL",
     "themes": [{ "name": "SeaGL", "url": "static/themes/seagl" }],
-    "windowTitle": "Chat · SeaGL",
+    "windowTitle": "Chat · Seattle GNU/Linux Conference",
 
     "buffers": {
         "inline_link_auto_previews": false,
