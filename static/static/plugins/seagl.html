@@ -1,0 +1,15 @@
+<template id="seagl-about">
+  <div class="kiwi-appsettings-block">
+    <h3>About</h3>
+
+    <div class="kiwi-appsettings-section">
+      <p>Source: <a href="https://github.com/SeaGL/chat.seagl.org" target="_blank" rel="noopener">https://github.com/SeaGL/chat.seagl.org</a></p>
+    </div>
+  </div>
+</template>
+
+<script>
+  kiwi.plugin("seagl", (kiwi, log) => {
+    kiwi.addTab("settings", "About", {template: "#seagl-about"});
+  });
+</script>

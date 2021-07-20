@@ -30,6 +30,7 @@
     },
 
     "plugins": [
-        { "name": "libera-chat", "url": "static/plugins/libera-chat.js" }
+        { "name": "libera-chat", "url": "static/plugins/libera-chat.js" },
+        { "name": "seagl", "url": "static/plugins/seagl.html" }
     ]
 }
