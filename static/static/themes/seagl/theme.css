@@ -42,7 +42,7 @@
     --cyan: #41a8b4;
     --cyan-light: #51b7c2;
     --gray: #666;
-    --gray-light: #ddd;
+    --gray-light: #aaa;
 
     /* Assignments */
     --brand-primary: var(--seagl-blue-700);
@@ -69,6 +69,17 @@
 .kiwi-startup-common-section-info-content {
     background-color: transparent;
     border-radius: 0;
+}
+.kiwi-startup-common-section-info-content small {
+    color: var(--gray-light);
+    font-size: 1rem;
+}
+.kiwi-startup-common-section-info-content small a {
+    color: inherit;
+    text-decoration: none;
+}
+.kiwi-startup-common-section-info-content small a:is(:active, :focus, :hover) {
+    text-decoration: underline;
 }
 .kiwi-startup-common-section-connection {
     background-color: var(--comp-statebrowser-bg);
