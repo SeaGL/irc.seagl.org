@@ -20,6 +20,7 @@
 
     "startupOptions": {
         "channel": "#SeaGL",
+        "gecos": "https://chat.seagl.org/",
         "nick": "Guest?",
         "showChannel": false,
         "showPassword": false,
