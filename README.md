@@ -1,4 +1,4 @@
-# meet.seagl.org
+# seagl.org/meet
 
 A welcoming web interface for [SeaGL]’s chat channels, comprised of:
 
