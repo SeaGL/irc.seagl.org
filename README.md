@@ -1,6 +1,6 @@
-# seagl.org/meet
+# irc.seagl.org
 
-A welcoming web interface for [SeaGL]’s chat channels, comprised of:
+A convenient web interface to [SeaGL]’s IRC channels, comprised of:
 
 - [Kiwi IRC] (unmodified)
 - a Kiwi IRC [configuration](./static/static/config.json)
@@ -45,7 +45,7 @@ the site to [GitHub Pages].
 [libera chat]: https://libera.chat/
 [make]: https://www.gnu.org/software/make/
 [node.js]: https://nodejs.org/
-[production]: https://github.com/SeaGL/meet.seagl.org/tree/production
+[production]: https://github.com/SeaGL/irc.seagl.org/tree/production
 [rsync]: https://rsync.samba.org/
 [seagl]: https://seagl.org/
 [serve]: https://github.com/vercel/serve
