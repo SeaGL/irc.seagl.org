@@ -1,0 +1,27 @@
+<template id="seagl-about">
+  <div class="kiwi-appsettings-block">
+    <h3>About</h3>
+
+    <div class="kiwi-appsettings-section">
+      <p>Source: <a href="https://github.com/SeaGL/irc.seagl.org" target="_blank" rel="noopener">https://github.com/SeaGL/irc.seagl.org</a></p>
+    </div>
+  </div>
+</template>
+
+<div style="display: none;">
+  <div id="seagl-info" class="seagl-statebrowser-content">
+    <h1><a href="https://seagl.org/" target="_blank" rel="noopener">SeaGL</a></h1>
+
+    <ul class="plain">
+      <li><a href="https://seagl.org/code_of_conduct" target="_blank" rel="noopener">Code of Conduct</a></li>
+      <li><a href="https://libera.chat/policies" target="_blank" rel="noopener">Libera.Chat Policies</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  kiwi.plugin("seagl", (kiwi, log) => {
+    kiwi.addTab("settings", "About", {template: "#seagl-about"});
+    kiwi.addUi("browser", document.getElementById("seagl-info"));
+  });
+</script>
